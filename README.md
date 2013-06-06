@@ -1,0 +1,4 @@
+substitute
+==========
+
+javascript micro template
