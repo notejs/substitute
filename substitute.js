@@ -26,7 +26,7 @@
 		transform = transform || thisObject["transform"] || function(v){ return v; };
 
 		return template.replace(/\$\{([^\s\:\}]+)(?:\:([^\s\:\}]+))?\}/g, function(match, key, format){
-				var value = map[key] || match;
+				var value = map[key] || "undefined" === typeof map[key] ? match : map[key];
 				format && (value = thisObject[format](value, key));
 				return transform(value, key).toString();
 			}); // String
