@@ -1,0 +1,5 @@
+.DS_Store
+tmp
+dist
+dist-test
+npm-debug.log

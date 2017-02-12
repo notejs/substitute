@@ -1,0 +1,22 @@
+{
+  "name": "substitute.js",
+  "version": "0.1.0",
+  "description": "A javascript micro template, reference dojo/string",
+  "keywords": [
+    "template",
+    "substitute"
+  ],
+  "author": {
+    "name": "linus wang",
+    "email": "linus.wang.i77@gmail.com",
+    "url": "https://github.com/substitute"
+  },
+  "homepage": "https://github.com/substitute",
+  "bugs": "https://github.com/notejs/substitute/issues",
+  "main": "substitute.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notejs/substitute"
+  },
+  "readmeFilename": "README.md"
+}
