@@ -1,6 +1,6 @@
 {
   "name": "substitute.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A javascript micro template, reference dojo/string",
   "main": "./substitute.js",
   "keywords": [

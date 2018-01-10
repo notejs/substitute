@@ -1,6 +1,4 @@
-substitute.js
-
-==========
+# substitute.js
 
 A javascript micro template, reference [Dojo](http://dojotoolkit.org)
 
@@ -21,7 +19,7 @@ A javascript micro template, reference [Dojo](http://dojotoolkit.org)
 	const string = substitute(template, map);
 ```
 
-### use format
+### Use format
 
 ```javascript
     const template = "${name:nameFmt} ${age:ageFmt}";
