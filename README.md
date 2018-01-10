@@ -1,7 +1,46 @@
-substitute
+substitute.js
+
 ==========
 
-javascript micro template, reference dojo/string(<a target="_blank" href="http://dojotoolkit.org">dojotoolkit.org</a>)
+A javascript micro template, reference [Dojo](http://dojotoolkit.org)
 
-###Usage
-please refer to the test.html
+## Usage
+
+### Basic
+
+```javascript
+    import substitute from 'substitute.js';
+
+    const template = "<div>${name}</div><div>${age}</div>";
+
+	const map = {
+        name : "Linus Wang",
+        age: 23
+	};
+
+	const string = substitute(template, map);
+```
+
+### use format
+
+```javascript
+    const template = "${name:nameFmt} ${age:ageFmt}";
+
+	const map = {
+		name : "Linus Wang"
+	};
+
+	const thisObject = {
+		nameFmt : function(value, key){
+			return key + " is: " + value;
+		}, 
+		ageFmt : function(value, key){
+			return key + " is: " + value;
+		},
+		transform : function(value, key){
+			return value;
+		}
+	}
+
+	const string = substitute(template, map, null, thisObject);
+```
